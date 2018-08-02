@@ -1,0 +1,56 @@
+<?php
+if(!session_start())
+{
+  session_start();
+}
+?>
+ <!DOCTYPE html>
+  <html>
+    <head>
+    <title>Dashboard</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body bgcolor="#272525">
+    
+    <center>
+              <div>
+              <a href="mycart.php" style="float:right ; background-color:red ;color:white">My Cart</a>
+              <a href="abc.html" style="float:right ; background-color:red ;color:white">Log-out</a>
+
+         </div><br><br>
+            
+            <nav style="background-color:#FF4500">
+              <div class="nav-wrapper">
+              <a href="#" class="brand-logo" style="margin-left:1%;">ArTisTicA</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                   <li class="active"><a href="#">Dashboard</a></li>
+                  <li><a href="explore.php">Explore</a></li>
+                
+                </ul>
+              </div>
+            </nav>
+
+    
+      <br>
+		    
+      <?php
+      echo "Welcome ".$_SESSION['name'];
+      ?>   
+     <br><br>
+		<a class="waves-effect waves-light btn" style="float:left ;" href="myupload.php">My Purchases</a>
+		
+		
+		<br>
+		
+ </center>
+ </body>
+ 
+ </html>
+ 

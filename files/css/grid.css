@@ -1,0 +1,47 @@
+      .avl
+{
+  color:green;
+  font-weight: bolder;
+  text-align: center;
+}
+.cap 
+{
+  font-weight: bold;
+  z-index: 50;
+  margin-left: 5px;
+}
+.grid {
+  
+  padding: 8px;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  margin-left: 6%;
+}
+
+.grid li {
+  float: left;
+  overflow: hidden;
+  width: 20%; /* Fallback */
+  width: calc(100% / 5);
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border-style: solid;
+  border-color: #FF4500;
+  border-width: 4px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.grid li a
+ {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+
+}
+img{
+  width: 245px;
+  height: 285px; 
+}
+
